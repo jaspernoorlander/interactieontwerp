@@ -3,6 +3,9 @@
 	text-align: center
 }
 
-span.centerImage {
-     text-align: center;
+img.center_image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
 }
