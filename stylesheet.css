@@ -1,28 +1,29 @@
-.title {
-	border: 1px solid green;
-	text-align: center
-}
-
+/* Achtergrond*/
 body {
-	background: url('background.jpg') no-repeat center center fixed;
+	background: url('background3.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
 
-body {margin: 0;}
+
+
+/* Navigatie bar 
+   Code from Online tutorial at W3Schools.com, code edited to own preferences */
 
 ul.topnav {
     list-style-type: none;
-    margin: 0;
+	margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 	position: fixed;
-	width: 100%;
-	top: 0;
+	top: 0;	
 	left: 0;
+	width: 100%
 }
 
-ul.topnav li {float: left;}
+ul.topnav li {
+	float: left;
+}
 
 ul.topnav li a {
     display: block;
@@ -37,23 +38,95 @@ ul.topnav li a:hover:not(.active) {
 }
 
 ul.topnav li a.active {
-	background-color: rgb(223,104,10);
+	background-color: rgb(90,141,10);
 }
 
-@media screen and (max-width: 600px){ 
-    ul.topnav li {float: none;}
-	.content {margin-top: 200px;}
-}
-
+/*content box*/
 .content {
+	position: fixed;
+	overflow-y: scroll;
+	height: 75%;
 	border-radius: 15px;
 	margin-top: 100px;
 	margin-left: 5%;
 	margin-right: 5%;
-	padding-top: 20px ;
-	padding-left: 60px;
-	padding-right: 60px;
-	padding-bottom: 50px;
-	background: rgba(248, 248, 255, 0.8);
-	font-family: Euphemia, sans-serif;
+	padding: 20px 60px;
+	background: rgba(248, 248, 255, 0.85);
+	max-width: 900px;
+	
+    
+	
+}
+
+/* Veranderen navigatie en naar beneden brengen content kolom wanneer pagina smaller is dan 400px */
+@media screen and (max-width: 400px){ 
+    ul.topnav li {float: none;}
+	.content {margin-top: 260px;}
+}
+
+
+.box {
+	margin-bottom: 10px;
+	height: 250px;
+}
+
+img.opdr-image {
+	max-width: 200px;
+	width: 100%;
+	height: auto;
+	float: left;
+
+	display: block;
+	
+}
+
+h3.tekst {
+	
+}
+
+h3.opdr-titel {
+	margin-left: 220px;
+	
+	
+	
+	
+}
+
+p.opdr-content {
+	margin-left: 220px;
+	max-width: 500px;
+}
+
+
+
+
+
+ul.navdel  {
+	list-style-type: none;
+	overflow: hidden;
+    
+    margin: 0;
+	padding: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+    
+}
+
+ul.navdel li {
+	float: left;
+}
+
+ul.navdel li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 30px;
+    text-decoration: none;
+}
+
+hr {
+	margin-bottom: 60px
 }
