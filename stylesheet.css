@@ -4,7 +4,9 @@ body {
 	background-size: cover;
 }
 
-
+h2.weektitle {
+	margin-top: 0px;
+}
 
 /* Navigatie bar 
    Code from Online tutorial at W3Schools.com, code edited to own preferences */
@@ -43,63 +45,72 @@ ul.topnav li a.active {
 
 /*content box*/
 .content {
+	
 	position: fixed;
 	overflow-y: scroll;
-	height: 75%;
+	height: 80%;
 	border-radius: 15px;
-	margin-top: 100px;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-top: 80px;
+	display: block; 
+	margin-left: 5%; 
+  	margin-right: 5%; 
 	padding: 20px 60px;
 	background: rgba(248, 248, 255, 0.85);
-	max-width: 900px;
-	
-    
 	
 }
 
-/* Veranderen navigatie en naar beneden brengen content kolom wanneer pagina smaller is dan 400px */
-@media screen and (max-width: 400px){ 
-    ul.topnav li {float: none;}
-	.content {margin-top: 260px;}
-}
+
 
 
 .box {
-	margin-bottom: 10px;
-	height: 250px;
+	margin-bottom: 20px;
+	height: 280px;
+	border: 3px solid black;
+	border-radius: 15px;	
 }
 
 img.opdr-image {
 	max-width: 200px;
+	max-height: 200px;
 	width: 100%;
 	height: auto;
 	float: left;
-
+	margin-top: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
 	display: block;
+}
+
+.tekst {
+	max-width: 800px;
 	
 }
 
-h3.tekst {
-	
+
+a.linkopdr {
+	background: rgb(90,141,10);
+	margin-right: 10px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
+	float: right;	
 }
 
-h3.opdr-titel {
-	margin-left: 220px;
+@media screen and (max-width: 700px){ 
 	
-	
-	
-	
+	img.opdr-image{max-width: 150px}
+	.content {padding: 20px 20px;}
+	.tekst {padding: 10px 10px}
 }
 
-p.opdr-content {
-	margin-left: 220px;
-	max-width: 500px;
+/* Veranderen navigatie en naar beneden brengen content kolom wanneer pagina smaller is dan 400px */
+@media screen and (max-width: 400px){ 
+    ul.topnav li {float: none;
+	position: static;}
+	.content {margin-top: 260px;}
+	img.opdr-image {display: none;}
 }
-
-
-
-
 
 ul.navdel  {
 	list-style-type: none;
@@ -128,5 +139,5 @@ ul.navdel li a {
 }
 
 hr {
-	margin-bottom: 60px
+	margin-bottom: 40px
 }
