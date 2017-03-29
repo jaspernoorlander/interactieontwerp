@@ -24,8 +24,8 @@ ul.topnav li {
 ul.topnav li a, .dropbtn {
     display: block;
     color: white;
-    text-align: left;
-    padding: 14px 16px;
+    text-align: center;
+    padding: 13px 16px;
     text-decoration: none;
 }
 
@@ -55,10 +55,12 @@ ul.topnav li a.active {
     padding: 5px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
 }
 
-.dropdown-content a:hover {background-color: black}
+.dropdown-content a:hover {
+	background-color: black
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -136,6 +138,10 @@ a.linkopdr {
 	.content {margin-top: 10px; position: static;}
 	img.opdr-image {display: none;}
 	.box {height: 300px}
+	.dropdown-content {min-width: 370px;}
+	ul.topnav li a, .dropbtn{padding: 13px 150px}
+	
+	
 }
 
 ul.navdel  {
