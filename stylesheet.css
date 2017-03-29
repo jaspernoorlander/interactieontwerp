@@ -4,9 +4,6 @@ body {
 	background-size: cover;
 }
 
-h2.weektitle {
-	margin-top: 0px;
-}
 
 /* Navigatie bar 
    Code from Online tutorial at W3Schools.com, code edited to own preferences */
@@ -24,20 +21,47 @@ ul.topnav li {
 	float: left;
 }
 
-ul.topnav li a {
+ul.topnav li a, .dropbtn {
     display: block;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {
+ul.topnav li a:hover:not(.active),  {
 	background-color: black;
+}
+
+li.dropdown {
+	display: inline-block;
 }
 
 ul.topnav li a.active {
 	background-color: rgb(90,141,10);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 113px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: green;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: black}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /*content box*/
@@ -57,12 +81,12 @@ ul.topnav li a.active {
 
 
 
-
 .box {
 	margin-bottom: 20px;
 	height: 280px;
 	border: 3px solid black;
-	border-radius: 15px;	
+	border-radius: 15px;
+	
 }
 
 img.opdr-image {
@@ -79,6 +103,8 @@ img.opdr-image {
 
 .tekst {
 	max-width: 800px;
+	margin-right: 10px;
+	
 	
 }
 
@@ -90,12 +116,15 @@ a.linkopdr {
 	border-radius: 10px;
 	text-decoration: none;
 	color: white;
-	float: right;	
+	margin-top: auto;
+	display: inline-block;
+	float: right
+
 }
 
 @media screen and (max-width: 700px){ 
 	
-	img.opdr-image{max-width: 150px}
+	img.opdr-image{display: none}
 	.content {padding: 20px 20px;}
 	.tekst {padding: 10px 10px}
 }
