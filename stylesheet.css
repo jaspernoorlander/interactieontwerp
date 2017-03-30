@@ -4,6 +4,20 @@ body {
 	background-size: cover;
 }
 
+/*  Lettertype  */
+
+h1 {
+	font-family: 'Arkhip';
+}
+
+a, h3, h2 {
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-family: 'Lora', 'Roboto Slab', serif;
+	font-size: 13px;
+}
 
 /* Navigatie bar 
    Code from Online tutorial at W3Schools.com, code edited to own preferences */
@@ -78,17 +92,13 @@ ul.topnav li a.active {
   	margin-right: 5%; 
 	padding: 20px 60px;
 	background: rgba(248, 248, 255, 0.85);
-	
 }
-
-
 
 .box {
 	margin-bottom: 20px;
 	height: 280px;
 	border: 3px solid black;
 	border-radius: 15px;
-	
 }
 
 img.opdr-image {
@@ -107,9 +117,11 @@ img.opdr-image {
 	max-width: 800px;
 	margin-right: 10px;
 	
-	
 }
 
+.opdr-titel {
+	margin-top: 10px
+}
 
 a.linkopdr {
 	background: rgb(90,141,10);
@@ -121,8 +133,9 @@ a.linkopdr {
 	margin-top: auto;
 	display: inline-block;
 	float: right
-
 }
+
+/*repsonsive desing */
 
 @media screen and (max-width: 700px){ 
 	
@@ -139,7 +152,7 @@ a.linkopdr {
 	img.opdr-image {display: none;}
 	.box {height: 300px}
 	.dropdown-content {min-width: 370px;}
-	ul.topnav li a, .dropbtn{padding: 13px 150px}
+	ul.topnav li a, .dropbtn{padding: 13px 145px}
 	
 	
 }
