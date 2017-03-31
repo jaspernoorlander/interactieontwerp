@@ -96,7 +96,7 @@ ul.topnav li a.active {
 	overflow-y: scroll;
 	height: 80%;
 	border-radius: 15px;
-	margin-top: 200px;
+	margin-top: 60px;
 	margin-left: 5%; 
   	margin-right: 5%; 
 	padding: 20px 60px;
@@ -254,9 +254,10 @@ hr {
 
 /* Veranderen navigatie en naar beneden brengen content kolom wanneer pagina smaller is dan 400px */
 @media screen and (max-width: 400px){ 
-    ul.topnav li {float: none;
-	position: normal;}
-	.content {margin-top: 230px; position: static;}
+	ul.topnav{position: relative;
+	top: 0px; left: 0}
+    ul.topnav li {float: none;}
+	.content {margin-top: 40px; position: static;}
 	img.opdr-image {display: none;}
 	.box {height: 300px}
 	.dropdown-content {min-width: 370px;}
