@@ -7,12 +7,16 @@ body {
 /*  Lettertype  */
 
 h1, h2 {
-	font-family: 'Comfortaa', 'Arkhip', cursive;
+	font-family: 'Comfortaa';
 	
 }
 
 a, h3, h5, h4 {
 	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	font-size: 16 px;
 }
 
 p {
@@ -23,15 +27,18 @@ p {
 /* Navigatie bar 
    Code from Online tutorial at W3Schools.com, code edited to own preferences */
 
+#iefix {
+position: relative;
+z-index: 1000;
+}
+
 ul.topnav {
-	position: fixed;
-    list-style-type: none;
+	list-style-type: none;
 	margin: 0;
     padding: 0;
-	top: 0;
-    overflow: hidden;
     background-color: #333;
-	width: 100%
+	position: fixed;
+	width: 100%;
 }
 
 ul.topnav li {
@@ -46,7 +53,7 @@ ul.topnav li a, .dropbtn {
     text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active),  {
+ul.topnav li a:hover:not(.active)  {
 	background-color: black;
 }
 
@@ -85,32 +92,29 @@ ul.topnav li a.active {
 
 /*content box*/
 .content {
+	position: fixed;
+	overflow-y: scroll;
 	height: 80%;
 	border-radius: 15px;
-	margin-top: 60px;
+	margin-top: 200px;
 	margin-left: 5%; 
   	margin-right: 5%; 
 	padding: 20px 60px;
 	background: rgba(248, 248, 255, 0.9);
-}
-
-.content2 {
-	height: 80%;
-	border-radius: 15px;
-	margin-top: 100px;
-	margin-left: 5%; 
-  	margin-right: 5%; 
-	padding: 20px 60px;
-	background: rgba(248, 248, 255, 0.9);
-	text-align: center;
+	z-index: 2
 }
 
 
 /* Home pagina */
-#Welkomtekst {
+.Welkomtekst {
 	text-align: center;
 	width: 100%;
 	display: block;
+	
+}
+
+.tekst-home {
+	font-size: 14px;
 }
 
 .foto {
@@ -208,7 +212,7 @@ hr {
 }
 
 .tekst-eind {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .kopje {
@@ -252,7 +256,7 @@ hr {
 @media screen and (max-width: 400px){ 
     ul.topnav li {float: none;
 	position: normal;}
-	.content {margin-top: 10px; position: static;}
+	.content {margin-top: 230px; position: static;}
 	img.opdr-image {display: none;}
 	.box {height: 300px}
 	.dropdown-content {min-width: 370px;}
