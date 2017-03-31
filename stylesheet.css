@@ -6,11 +6,12 @@ body {
 
 /*  Lettertype  */
 
-h1 {
-	font-family: 'Arkhip';
+h1, h2 {
+	font-family: 'Comfortaa', 'Arkhip', cursive;
+	
 }
 
-a, h3, h2 {
+a, h3, h5, h4 {
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -23,9 +24,11 @@ p {
    Code from Online tutorial at W3Schools.com, code edited to own preferences */
 
 ul.topnav {
+	position: fixed;
     list-style-type: none;
 	margin: 0;
     padding: 0;
+	top: 0;
     overflow: hidden;
     background-color: #333;
 	width: 100%
@@ -82,18 +85,42 @@ ul.topnav li a.active {
 
 /*content box*/
 .content {
-	position: fixed;
-	overflow-y: scroll;
 	height: 80%;
 	border-radius: 15px;
-	margin-top: 40px;
-	display: block; 
+	margin-top: 60px;
 	margin-left: 5%; 
   	margin-right: 5%; 
 	padding: 20px 60px;
-	background: rgba(248, 248, 255, 0.85);
+	background: rgba(248, 248, 255, 0.9);
 }
 
+.content2 {
+	height: 80%;
+	border-radius: 15px;
+	margin-top: 100px;
+	margin-left: 5%; 
+  	margin-right: 5%; 
+	padding: 20px 60px;
+	background: rgba(248, 248, 255, 0.9);
+	text-align: center;
+}
+
+
+/* Home pagina */
+#Welkomtekst {
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+
+.foto {
+	width: 60%;
+	max-width: 500px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+/* Deliverables pagina */
 .box {
 	margin-bottom: 20px;
 	height: 280px;
@@ -135,32 +162,10 @@ a.linkopdr {
 	float: right
 }
 
-/*repsonsive desing */
-
-@media screen and (max-width: 700px){ 
-	
-	img.opdr-image{display: none}
-	.content {padding: 20px 20px;}
-	.tekst {padding: 10px 10px}
-}
-
-/* Veranderen navigatie en naar beneden brengen content kolom wanneer pagina smaller is dan 400px */
-@media screen and (max-width: 400px){ 
-    ul.topnav li {float: none;
-	position: normal;}
-	.content {margin-top: 10px; position: static;}
-	img.opdr-image {display: none;}
-	.box {height: 300px}
-	.dropdown-content {min-width: 370px;}
-	ul.topnav li a, .dropbtn{padding: 13px 145px}
-	
-	
-}
 
 ul.navdel  {
 	list-style-type: none;
 	overflow: hidden;
-    
     margin: 0;
 	padding: 0;
     font-size: 14px;
@@ -185,4 +190,73 @@ ul.navdel li a {
 
 hr {
 	margin-bottom: 40px
+}
+
+/*Eindproject */
+
+.foto-eind {
+	width: 50%;
+	max-width: 500px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.eindproject {
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: center;
+}
+
+.tekst-eind {
+	font-size: 16px;
+}
+
+.kopje {
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.link-eind {
+	text-decoration: none;
+	color: rgb(90,141,10);
+	margin-top: 0px;
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+
+/* Dump */
+		
+.imgdump {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	border-radius: 15px;
+	max-width: 500px;
+}
+
+.dumptekst {
+	text-align: center;
+	
+}
+/*repsonsive desing */
+
+@media screen and (max-width: 700px){ 
+	
+	img.opdr-image{display: none}
+	.content {padding: 20px 20px;}
+	.tekst {padding: 10px 10px}
+}
+
+/* Veranderen navigatie en naar beneden brengen content kolom wanneer pagina smaller is dan 400px */
+@media screen and (max-width: 400px){ 
+    ul.topnav li {float: none;
+	position: normal;}
+	.content {margin-top: 10px; position: static;}
+	img.opdr-image {display: none;}
+	.box {height: 300px}
+	.dropdown-content {min-width: 370px;}
+	ul.topnav li a, .dropbtn{padding: 13px 145px}
+	
+	
 }
